@@ -89,7 +89,6 @@ export default function IndexPage() {
     "a person lifts and bends their left leg/knee, then sweeps the leg in a counterclockwise motion back to the starting position, then repeats that process once more.",
     "a person takes two steps forward then turns to their right 180 degrees and takes two steps away.",
     "the man shakes something places it on the table and steps backwards.",
-    "the man shakes something places it on the table and steps backwards.",
     "a person holds on to things on both sides while carefully walking.",
     "a person kicks two times on his left then kicks forward two times",
   ]
