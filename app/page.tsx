@@ -175,7 +175,10 @@ export default function IndexPage() {
           </h1> */}
           <div className="grid grid-cols-3 lg:mx-[12rem] mt-4 gap-4 text-xl text-center leading-tight tracking-tight md:text-2xl px-6">
             <Button variant="outline">
-              <Link href="https://arxiv.org" className="flex items-center">
+              <Link
+                href="https://github.com/OpenMotionLab/MotionGPT/blob/main/MotionGPT.pdf"
+                className="flex items-center"
+              >
                 <Icons.paper className="mr-2 h-4 w-4" />
                 Paper
               </Link>
