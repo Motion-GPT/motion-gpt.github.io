@@ -177,6 +177,7 @@ export default function IndexPage() {
             <Button variant="outline" asChild>
               <Link
                 href="https://github.com/OpenMotionLab/MotionGPT/blob/main/MotionGPT.pdf"
+                target="_blank"
                 className="flex items-center"
               >
                 <Icons.paper className="mr-2 h-4 w-4" />
@@ -186,6 +187,7 @@ export default function IndexPage() {
             <Button variant="outline" asChild>
               <Link
                 href="https://github.com/OpenMotionLab/MotionGPT"
+                target="_blank"
                 className="flex items-center"
               >
                 <Icons.gitHub className="mr-2 h-4 w-4" />
