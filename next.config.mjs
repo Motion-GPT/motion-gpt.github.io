@@ -5,9 +5,8 @@ const nextConfig = {
   experimental: {
     appDir: true,
   },
-  distDir: "/nextjs-github-pages",
   images: { unoptimized: true },
-  // assetPrefix: "https://motion-gpt.github.io/",
+  assetPrefix: "https://motion-gpt.github.io/",
 }
 
 export default nextConfig
