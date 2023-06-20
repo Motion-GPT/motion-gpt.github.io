@@ -159,7 +159,7 @@ export default function IndexPage() {
           <div className="flex justify-center items-center mt-4">
             <div className="max-w-screen-lg">
               <video autoPlay loop playsInline muted>
-                <source src="/nextjs-github-pages/videos/teaser_video.mp4" type="video/mp4" />
+                <source src="videos/teaser_video.mp4" type="video/mp4" />
               </video>
             </div>
           </div>

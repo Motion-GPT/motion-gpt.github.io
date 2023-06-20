@@ -5,7 +5,7 @@ const nextConfig = {
   experimental: {
     appDir: true,
   },
-  basePath: "/nextjs-github-pages",
+  distDir: "/nextjs-github-pages",
   images: { unoptimized: true },
   // assetPrefix: "https://motion-gpt.github.io/",
 }
