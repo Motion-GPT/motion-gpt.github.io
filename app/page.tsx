@@ -357,8 +357,8 @@ export default function IndexPage() {
               target="_blank"
             >
               Next.js
-            </Link>{" "}
-            ,
+            </Link>
+            ,{" "}
             <Link
               href="https://tailwindcss.com/"
               className="font-medium hover:text-blue-400 hover:underline"
@@ -374,7 +374,15 @@ export default function IndexPage() {
             >
               shadcn/ui
             </Link>
-            . Style inspire by{" "}
+            . Icons from{" "}
+            <Link
+              href="https://lucide.dev/"
+              className="font-medium hover:text-blue-400 hover:underline"
+              target="_blank"
+            >
+              Lucide
+            </Link>
+            . Style inspired by{" "}
             <Link
               href="https://anonymous-31415926.github.io/"
               className="font-medium hover:text-blue-400 hover:underline"
