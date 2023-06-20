@@ -383,6 +383,7 @@ export default function IndexPage() {
             >
               RERENDER A VIDEO
             </Link>
+            .
           </p>
         </div>
       </div>
