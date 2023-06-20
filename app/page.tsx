@@ -41,15 +41,15 @@ export default function IndexPage() {
   const authorAffliations = ["1", "2", "2", "3", "2", "1"]
 
   const t2mResults = [
-    "videos/text-to-motion/0.mp4",
-    "videos/text-to-motion/1.mp4",
-    "videos/text-to-motion/2.mp4",
-    "videos/text-to-motion/3.mp4",
-    "videos/text-to-motion/4.mp4",
-    "videos/text-to-motion/5.mp4",
-    "videos/text-to-motion/6.mp4",
-    "videos/text-to-motion/7.mp4",
-    "videos/text-to-motion/8.mp4",
+    "videos/text-to-motion/0.webm",
+    "videos/text-to-motion/1.webm",
+    "videos/text-to-motion/2.webm",
+    "videos/text-to-motion/3.webm",
+    "videos/text-to-motion/4.webm",
+    "videos/text-to-motion/5.webm",
+    "videos/text-to-motion/6.webm",
+    "videos/text-to-motion/7.webm",
+    "videos/text-to-motion/8.webm",
   ]
   const t2mResultsCaptions = [
     "A person is walking forwards, but stumbles and steps back, then carries on forward.",
@@ -64,14 +64,14 @@ export default function IndexPage() {
   ]
 
   const m2tVideos = [
-    "videos/motion-to-text/0.mp4",
-    "videos/motion-to-text/1.mp4",
-    "videos/motion-to-text/2.mp4",
-    "videos/motion-to-text/3.mp4",
-    "videos/motion-to-text/4.mp4",
-    "videos/motion-to-text/5.mp4",
-    "videos/motion-to-text/6.mp4",
-    "videos/motion-to-text/7.mp4",
+    "videos/motion-to-text/0.webm",
+    "videos/motion-to-text/1.webm",
+    "videos/motion-to-text/2.webm",
+    "videos/motion-to-text/3.webm",
+    "videos/motion-to-text/4.webm",
+    "videos/motion-to-text/5.webm",
+    "videos/motion-to-text/6.webm",
+    "videos/motion-to-text/7.webm",
   ]
   const m2tQuestions = [
     "Please explain the movement shown in [Motion_toknes] using natural language.",
@@ -97,10 +97,10 @@ export default function IndexPage() {
   ]
 
   const m2mVideos = [
-    "videos/motion-pred/0.mp4",
-    "videos/motion-pred/1.mp4",
-    "videos/motion-pred/2.mp4",
-    "videos/motion-pred/2.mp4",
+    "videos/motion-pred/0.webm",
+    "videos/motion-pred/1.webm",
+    "videos/motion-pred/2.webm",
+    "videos/motion-pred/2.webm",
   ]
 
   const t2tResults = [
@@ -157,9 +157,9 @@ export default function IndexPage() {
             as Foreign <span className="text-blue-500">Language</span>
           </h1>
           <div className="flex justify-center items-center mt-4">
-            <div className="max-w-screen-lg">
+            <div className="max-w-screen-lg ">
               <video autoPlay loop playsInline muted>
-                <source src="videos/teaser_video.mp4" type="video/mp4" />
+                <source src="videos/teaser_video.webm" type="video/webm" />
               </video>
             </div>
           </div>

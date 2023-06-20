@@ -111,7 +111,7 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
                     muted
                     className="border-2 drop-shadow-lg"
                   >
-                    <source src={src} type="video/mp4" />
+                    <source src={src} type="video/webm" />
                   </video>
                   <p className="text-left font-semibold pt-2">
                     Q: "{captions[index]}"
