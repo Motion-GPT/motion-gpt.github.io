@@ -42,24 +42,22 @@ export default function IndexPage() {
 
   const t2mResults = [
     "videos/text-to-motion/0.webm",
-    "videos/text-to-motion/1.webm",
+
     "videos/text-to-motion/2.webm",
-    "videos/text-to-motion/3.webm",
-    "videos/text-to-motion/4.webm",
+
     "videos/text-to-motion/5.webm",
     "videos/text-to-motion/6.webm",
-    "videos/text-to-motion/7.webm",
+
     "videos/text-to-motion/8.webm",
   ]
   const t2mResultsCaptions = [
     "A person is walking forwards, but stumbles and steps back, then carries on forward.",
-    "A man aggressively kicks an object to the left using his right foot.",
+
     "A person lowers their arms, gets onto all fours, and crawls.",
-    "A person bends over and picks things up with both hands individually, then walks forward.",
-    "The man kicks with his right foot and then returns to a stable position.",
+
     "The person is practing balancing on one leg.",
     "A person walks forward, stops, turns directly to their right, then walks forward again.",
-    "A person sits on the ledge of something then gets off and walks away.",
+
     "A person is crouched down and walking around sneakily.",
   ]
 
