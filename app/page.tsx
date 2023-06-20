@@ -31,7 +31,7 @@ export default function IndexPage() {
     "Tao Chen",
   ]
   const authorLinks = [
-    "https://scholar.google.com/citations?user=PsUFNaIAAAAJ",
+    "https://github.com/billl-jiang",
     "https://chenxin.tech/",
     "https://scholar.google.com/citations?user=A6K6bkoAAAAJ",
     "https://sist.shanghaitech.edu.cn/2020/0707/c7499a53862/page.htm",
