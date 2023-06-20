@@ -351,15 +351,38 @@ export default function IndexPage() {
         {/* Acknowledgement */}
         <div className="flex justify-center">
           <p className="">
-            Style inspire by{" "}
-            <a
+            Made with{" "}
+            <Link
+              href="https://nextjs.org/"
+              className="font-medium hover:text-blue-400 hover:underline"
+              target="_blank"
+            >
+              Next.js
+            </Link>{" "}
+            ,
+            <Link
+              href="https://tailwindcss.com/"
+              className="font-medium hover:text-blue-400 hover:underline"
+              target="_blank"
+            >
+              Tailwind CSS
+            </Link>{" "}
+            and{" "}
+            <Link
+              href="https://ui.shadcn.com/"
+              className="font-medium hover:text-blue-400 hover:underline"
+              target="_blank"
+            >
+              shadcn/ui
+            </Link>
+            . Style inspire by{" "}
+            <Link
               href="https://anonymous-31415926.github.io/"
               className="font-medium hover:text-blue-400 hover:underline"
               target="_blank"
-              rel="noreferrer"
             >
               RERENDER A VIDEO
-            </a>
+            </Link>
           </p>
         </div>
       </div>
