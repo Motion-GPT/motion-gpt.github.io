@@ -174,24 +174,24 @@ export default function IndexPage() {
             as Foreign <span className="text-blue-500">Language</span>
           </h1> */}
           <div className="grid grid-cols-3 lg:mx-[12rem] mt-4 gap-4 text-xl text-center leading-tight tracking-tight md:text-2xl px-6">
-            <Link
-              href="https://github.com/OpenMotionLab/MotionGPT/blob/main/MotionGPT.pdf"
-              className="flex items-center"
-            >
-              <Button variant="outline">
+            <Button variant="outline" asChild>
+              <Link
+                href="https://github.com/OpenMotionLab/MotionGPT/blob/main/MotionGPT.pdf"
+                className="flex items-center"
+              >
                 <Icons.paper className="mr-2 h-4 w-4" />
                 Paper
-              </Button>
-            </Link>
-            <Link
-              href="https://github.com/OpenMotionLab/MotionGPT"
-              className="flex items-center"
-            >
-              <Button variant="outline">
+              </Link>
+            </Button>
+            <Button variant="outline" asChild>
+              <Link
+                href="https://github.com/OpenMotionLab/MotionGPT"
+                className="flex items-center"
+              >
                 <Icons.gitHub className="mr-2 h-4 w-4" />
                 Code
-              </Button>
-            </Link>
+              </Link>
+            </Button>
             <Button variant="outline" disabled>
               <Icons.boxes className="mr-2 h-4 w-4" />
               Web Demo &#20; <Badge variant="outline">Soon</Badge>
