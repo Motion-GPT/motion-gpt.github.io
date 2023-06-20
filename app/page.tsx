@@ -42,22 +42,24 @@ export default function IndexPage() {
 
   const t2mResults = [
     "videos/text-to-motion/0.webm",
-
+    "videos/text-to-motion/1.webm",
     "videos/text-to-motion/2.webm",
-
+    "videos/text-to-motion/3.webm",
+    "videos/text-to-motion/4.webm",
     "videos/text-to-motion/5.webm",
     "videos/text-to-motion/6.webm",
-
+    "videos/text-to-motion/7.webm",
     "videos/text-to-motion/8.webm",
   ]
   const t2mResultsCaptions = [
     "A person is walking forwards, but stumbles and steps back, then carries on forward.",
-
+    "a person moves their hands back and forth as if using a broom.",
     "A person lowers their arms, gets onto all fours, and crawls.",
-
+    "Person is side stepping back and forth.",
+    "a person kneeling on the ground gets up ",
     "The person is practing balancing on one leg.",
     "A person walks forward, stops, turns directly to their right, then walks forward again.",
-
+    " a person walks forward, leans and touches something with his left hand, and then walks backward.",
     "A person is crouched down and walking around sneakily.",
   ]
 
