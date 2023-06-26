@@ -298,15 +298,6 @@ export default function IndexPage() {
               <TabsTrigger value="t2t">Question-Answer</TabsTrigger>
               <TabsTrigger value="m2m">Motion Complete</TabsTrigger>
             </TabsList>
-            <TabsContent value="t2m">
-              <div className="relative">
-                <EmblaCarousel
-                  slides={t2mResults}
-                  captions={t2mResultsCaptions}
-                  options={{ loop: true }}
-                ></EmblaCarousel>
-              </div>
-            </TabsContent>
             <TabsContent value="m2t">
               <div className="relative">
                 <EmblaCarousel2
@@ -315,6 +306,15 @@ export default function IndexPage() {
                   captions2={m2tAnswers}
                   options={{ loop: true }}
                 ></EmblaCarousel2>
+              </div>
+            </TabsContent>
+            <TabsContent value="t2m">
+              <div className="relative">
+                <EmblaCarousel
+                  slides={t2mResults}
+                  captions={t2mResultsCaptions}
+                  options={{ loop: true }}
+                ></EmblaCarousel>
               </div>
             </TabsContent>
             <TabsContent value="m2m">
