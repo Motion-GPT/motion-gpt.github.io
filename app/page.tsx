@@ -148,7 +148,7 @@ export default function IndexPage() {
   return (
     <div className="scroll-smooth">
       {/* Video */}
-      <section className="flex flex-col gap-2 bg-[#F7F7F7]">
+      <section className="flex flex-col gap-2 bg-[#F6F6F6]">
         <div className="w-full h-[calc(100vh)] items-end justify-center">
           <h1 className="text-4xl text-center font-extrabold leading-tight tracking-tight md:text-6xl py-4">
             <span className="text-amber-500">Motion</span>GPT: Human Motion{" "}
@@ -291,10 +291,10 @@ export default function IndexPage() {
             <div className="text-4xl">Results</div>
           </h2>
           {/* Different Tasks */}
-          <Tabs defaultValue="t2m">
-            <TabsList>
-              <TabsTrigger value="t2m">Motion Generation</TabsTrigger>
+          <Tabs defaultValue="m2t">
+            <TabsList className="grid w-full grid-cols-4">
               <TabsTrigger value="m2t">Motion Translation</TabsTrigger>
+              <TabsTrigger value="t2m">Motion Generation</TabsTrigger>
               <TabsTrigger value="t2t">Question-Answer</TabsTrigger>
               <TabsTrigger value="m2m">Motion Complete</TabsTrigger>
             </TabsList>
