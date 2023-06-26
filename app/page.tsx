@@ -149,13 +149,13 @@ export default function IndexPage() {
     <div className="scroll-smooth">
       {/* Video */}
       <section className="flex flex-col gap-2 bg-[#F6F6F6]">
-        <div className="w-full h-[calc(100vh)] items-end justify-center">
-          <h1 className="text-4xl text-center font-extrabold leading-tight tracking-tight md:text-6xl py-4">
+        <div className="h-[calc(100vh)] w-full items-end justify-center">
+          <h1 className="py-4 text-center text-4xl font-extrabold leading-tight tracking-tight md:text-6xl">
             <span className="text-amber-500">Motion</span>GPT: Human Motion{" "}
             <br className="hidden sm:inline" />
             as Foreign <span className="text-blue-500">Language</span>
           </h1>
-          <div className="flex justify-center items-center mt-4">
+          <div className="mt-4 flex items-center justify-center">
             <div className="max-w-screen-lg ">
               <video autoPlay loop playsInline muted>
                 <source src="videos/teaser_video.webm" type="video/webm" />
@@ -172,7 +172,7 @@ export default function IndexPage() {
             <br className="hidden sm:inline" />
             as Foreign <span className="text-blue-500">Language</span>
           </h1> */}
-          <div className="grid grid-cols-3 lg:mx-[12rem] mt-4 gap-4 text-xl text-center leading-tight tracking-tight md:text-2xl px-6">
+          <div className="mt-4 grid grid-cols-3 gap-4 px-6 text-center text-xl leading-tight tracking-tight md:text-2xl lg:mx-[12rem]">
             <Button variant="outline" asChild>
               <Link
                 href="https://motion-gpt.github.io/MotionGPT.pdf"
@@ -199,7 +199,7 @@ export default function IndexPage() {
             </Button>
           </div>
 
-          <div className="grid grid-cols-6 lg:mx-[18rem] mt-4 gap-2 text-xl text-center tracking-tigh">
+          <div className="tracking-tigh mt-4 grid grid-cols-6 gap-2 text-center text-xl lg:mx-[18rem]">
             {authors.map((author, index) => (
               <div key={index}>
                 <Link
@@ -212,7 +212,7 @@ export default function IndexPage() {
               </div>
             ))}
           </div>
-          <div className="grid grid-cols-3 lg:mx-[12rem] mt-4 gap-2 text-lg text-center leading-tight tracking-tight md:text-xl justify-center">
+          <div className="mt-4 grid grid-cols-3 justify-center gap-2 text-center text-lg leading-tight tracking-tight md:text-xl lg:mx-[12rem]">
             <div className="flex justify-center">
               <Image src={fudanLogo} alt="Fudan University" width={32}></Image>
               <span>
@@ -238,12 +238,12 @@ export default function IndexPage() {
           </div>
         </section>
         {/* Abstract */}
-        <section className="py-10 max-w-screen-lg mx-auto space-y-5">
-          <h2 className="font-mono font-semibold text-2xl uppercase tracking-tight py-5">
+        <section className="mx-auto max-w-screen-lg space-y-5 py-10">
+          <h2 className="py-5 font-mono text-2xl font-semibold uppercase tracking-tight">
             <div className="text-red-500">Paper</div>
             <div className="text-4xl">Abstract</div>
           </h2>
-          <p className="mt-4 md:text-l lg:text-xl text-justify">
+          <p className="md:text-l mt-4 text-justify lg:text-xl">
             Though the advancement of pre-trained large language models unfolds,
             the exploration of building a unified model for language and other
             multimodal data, such as motion, remains challenging and untouched
@@ -268,12 +268,12 @@ export default function IndexPage() {
           </p>
           <Image src={teaser} alt="MotionGPT teaser"></Image>
         </section>
-        <section className="py-10 max-w-screen-lg mx-auto space-y-5">
-          <h2 className="font-mono font-semibold text-2xl uppercase tracking-tight py-5">
+        <section className="mx-auto max-w-screen-lg space-y-5 py-10">
+          <h2 className="py-5 font-mono text-2xl font-semibold uppercase tracking-tight">
             <div className="text-red-500">Our</div>
             <div className="text-4xl">Method</div>
           </h2>
-          <p className="mt-4 md:text-l lg:text-xl text-justify">
+          <p className="md:text-l mt-4 text-justify lg:text-xl">
             To involve large language data and models in the motion generation
             tasks, we propose a unified motion-language framework named
             MotionGPT. MotionGPT consists of a motion tokenizer responsible for
@@ -285,8 +285,8 @@ export default function IndexPage() {
           <Image src={pipeline} alt="MotionGPT pipeline"></Image>
         </section>
         {/* More Results */}
-        <section className="py-10 max-w-screen-lg mx-auto space-y-5 w-full">
-          <h2 className="font-mono font-semibold text-2xl uppercase tracking-tight py-5">
+        <section className="mx-auto w-full max-w-screen-lg space-y-5 py-10">
+          <h2 className="py-5 font-mono text-2xl font-semibold uppercase tracking-tight">
             <div className="text-red-500">Example</div>
             <div className="text-4xl">Results</div>
           </h2>
@@ -331,7 +331,7 @@ export default function IndexPage() {
           </Tabs>
 
           {/* Comparision */}
-          <h2 className="font-mono font-semibold text-2xl uppercase tracking-tight py-5">
+          <h2 className="py-5 font-mono text-2xl font-semibold uppercase tracking-tight">
             <div className="text-red-500">Comparision</div>
             <div className="text-4xl">Results</div>
           </h2>
