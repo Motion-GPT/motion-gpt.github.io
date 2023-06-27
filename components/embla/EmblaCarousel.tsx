@@ -113,7 +113,7 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
                     <source src={src} type="video/webm" />
                   </video>
                   {captions && captions[index] && (
-                    <p className="text-center font-semibold pt-2">
+                    <p className="pt-2 text-center font-semibold">
                       "{captions[index]}"
                     </p>
                   )}

@@ -198,7 +198,7 @@ export default function IndexPage() {
             </Button>
           </div>
 
-          <div className="tracking-tigh mt-4 grid grid-cols-6 gap-2 text-center text-xl lg:mx-[18rem]">
+          <div className="tracking-tigh mt-4 grid grid-cols-6 gap-2 text-center text-base md:text-lg lg:mx-[18rem] lg:text-xl">
             {authors.map((author, index) => (
               <div key={index}>
                 <Link
@@ -211,7 +211,7 @@ export default function IndexPage() {
               </div>
             ))}
           </div>
-          <div className="mt-4 grid grid-cols-3 justify-center gap-2 text-center text-lg leading-tight tracking-tight md:text-xl lg:mx-[12rem]">
+          <div className="mt-4 grid grid-cols-3 justify-center gap-2 text-center text-base leading-tight tracking-tight md:text-xl lg:mx-[12rem]">
             <div className="flex items-center justify-center">
               <Image src={fudanLogo} alt="Fudan University" width={32}></Image>
               <span>
