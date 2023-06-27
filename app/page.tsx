@@ -8,7 +8,6 @@ import shanghaiTechLogo from "@/public/shanghaitech.svg"
 import teaser from "@/public/teaser.png"
 import tencentLogo from "@/public/tencent.png"
 import white from "@/public/white.svg"
-import YouTube from "react-youtube"
 
 import "node_modules/video-react/dist/video-react.css"
 import { siteConfig } from "@/config/site"
@@ -213,19 +212,19 @@ export default function IndexPage() {
             ))}
           </div>
           <div className="mt-4 grid grid-cols-3 justify-center gap-2 text-center text-lg leading-tight tracking-tight md:text-xl lg:mx-[12rem]">
-            <div className="flex justify-center">
+            <div className="flex items-center justify-center">
               <Image src={fudanLogo} alt="Fudan University" width={32}></Image>
               <span>
                 <sup>1</sup>Fudan University
               </span>
             </div>
-            <div className="flex justify-center">
+            <div className="flex items-center  justify-center">
               <Image src={tencentLogo} alt="Tencent PCG" width={32}></Image>
               <span>
                 <sup>2</sup>Tencent PCG
               </span>
             </div>
-            <div className="flex justify-center">
+            <div className="flex items-center justify-center">
               <Image
                 src={shanghaiTechLogo}
                 alt="ShanghaiTech University"
@@ -341,7 +340,7 @@ export default function IndexPage() {
               height="360"
               src="https://www.youtube.com/embed/AH_q9P5dQ-c"
               title="MotionGPT Comparision"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allow="accelerometer; clipboard-write; encrypted-media; picture-in-picture"
               allowFullScreen
             ></iframe>
           </div>
