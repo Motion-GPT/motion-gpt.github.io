@@ -266,31 +266,7 @@ export default function IndexPage() {
             tasks including text-driven motion generation, motion captioning,
             motion prediction, and motion in-between.
           </p>
-          <Image src={teaser} alt="MotionGPT teaser"></Image>
-        </section>
-        <section className="mx-auto max-w-screen-lg space-y-5 py-10">
-          <h2 className="py-5 font-mono text-2xl font-semibold uppercase tracking-tight">
-            <div className="text-red-500">Our</div>
-            <div className="text-4xl">Method</div>
-          </h2>
-          <p className="md:text-l mt-4 text-justify lg:text-xl">
-            To involve large language data and models in the motion generation
-            tasks, we propose a unified motion-language framework named
-            MotionGPT. MotionGPT consists of a motion tokenizer responsible for
-            converting raw motion data into discrete motion tokens, as well as a
-            motion-aware language model that learns to understand the motion
-            tokens from large language pre-training models by corresponding
-            textual descriptions.
-          </p>
-          <Image src={pipeline} alt="MotionGPT pipeline"></Image>
-        </section>
-        {/* More Results */}
-        <section className="mx-auto w-full max-w-screen-lg space-y-5 py-10">
-          <h2 className="py-5 font-mono text-2xl font-semibold uppercase tracking-tight">
-            <div className="text-red-500">Example</div>
-            <div className="text-4xl">Results</div>
-          </h2>
-          {/* Different Tasks */}
+          {/* <Image src={teaser} alt="MotionGPT teaser"></Image> */}
           <Tabs defaultValue="m2t">
             <TabsList className="grid w-full grid-cols-4">
               <TabsTrigger value="m2t">Motion Translation</TabsTrigger>
@@ -329,6 +305,30 @@ export default function IndexPage() {
               <Chat message={t2tResults} />
             </TabsContent>
           </Tabs>
+        </section>
+        <section className="mx-auto max-w-screen-lg space-y-5 py-10">
+          <h2 className="py-5 font-mono text-2xl font-semibold uppercase tracking-tight">
+            <div className="text-red-500">Our</div>
+            <div className="text-4xl">Method</div>
+          </h2>
+          <p className="md:text-l mt-4 text-justify lg:text-xl">
+            To involve large language data and models in the motion generation
+            tasks, we propose a unified motion-language framework named
+            MotionGPT. MotionGPT consists of a motion tokenizer responsible for
+            converting raw motion data into discrete motion tokens, as well as a
+            motion-aware language model that learns to understand the motion
+            tokens from large language pre-training models by corresponding
+            textual descriptions.
+          </p>
+          <Image src={pipeline} alt="MotionGPT pipeline"></Image>
+        </section>
+        {/* More Results */}
+        <section className="mx-auto w-full max-w-screen-lg space-y-5 py-10">
+          {/* <h2 className="py-5 font-mono text-2xl font-semibold uppercase tracking-tight">
+            <div className="text-red-500">Example</div>
+            <div className="text-4xl">Results</div>
+          </h2> */}
+          {/* Different Tasks */}
 
           {/* Comparision */}
           <h2 className="py-5 font-mono text-2xl font-semibold uppercase tracking-tight">
