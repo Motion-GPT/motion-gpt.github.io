@@ -175,7 +175,7 @@ export default function IndexPage() {
           <div className="mt-4 grid grid-cols-3 gap-4 px-6 text-center text-xl leading-tight tracking-tight md:text-2xl lg:mx-[12rem]">
             <Button variant="outline" asChild>
               <Link
-                href="https://motion-gpt.github.io/MotionGPT.pdf"
+                href="https://arxiv.org/pdf/2306.14795"
                 target="_blank"
                 className="flex items-center"
               >
