@@ -157,7 +157,7 @@ export default function IndexPage() {
           <div className="mt-4 flex items-center justify-center">
             <div className="max-w-screen-lg ">
               <video autoPlay loop playsInline muted>
-                <source src="videos/teaser_video.webm" type="video/webm" />
+                <source src="videos/teaser_video_loop.webm" type="video/webm" />
               </video>
             </div>
           </div>
