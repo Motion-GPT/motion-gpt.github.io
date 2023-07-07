@@ -8,6 +8,7 @@ import shanghaiTechLogo from "@/public/shanghaitech.svg"
 import teaser from "@/public/teaser.png"
 import tencentLogo from "@/public/tencent.png"
 import white from "@/public/white.svg"
+import { CodeBlock, CopyBlock, dracula } from "react-code-blocks"
 
 import "node_modules/video-react/dist/video-react.css"
 import { siteConfig } from "@/config/site"
@@ -344,6 +345,26 @@ export default function IndexPage() {
               allowFullScreen
             ></iframe>
           </div>
+          {/* Citation */}
+          <h2 className="pt-5 font-mono text-2xl font-semibold uppercase tracking-tight">
+            <div className="text-3xl">Citation</div>
+          </h2>
+          <p className="md:text-l text-justify lg:text-xl">
+            If you find our code or paper helps, please consider citing:
+          </p>
+          <CopyBlock
+            text={`@article{jiang2023motiongpt,
+          title={MotionGPT: Human Motion as a Foreign Language},
+          author={Jiang, Biao and Chen, Xin and Liu, Wen and Yu, Jingyi and Yu, Gang and Chen, Tao},
+          journal={arXiv preprint arXiv:2306.14795}, 
+          year={2023}
+  }`}
+            language="bibtex"
+            showLineNumbers={false}
+            theme={dracula}
+            wrapLines={true}
+            codeBlock
+          />
         </section>
         <Separator className="my-8" />
         {/* Acknowledgement */}
