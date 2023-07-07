@@ -8,7 +8,8 @@ import shanghaiTechLogo from "@/public/shanghaitech.svg"
 import teaser from "@/public/teaser.png"
 import tencentLogo from "@/public/tencent.png"
 import white from "@/public/white.svg"
-import { CodeBlock, CopyBlock, dracula } from "react-code-blocks"
+import CodeBlock from "react-copy-code"
+import SyntaxHighlighter from "react-syntax-highlighter"
 
 import "node_modules/video-react/dist/video-react.css"
 import { siteConfig } from "@/config/site"
@@ -144,6 +145,13 @@ export default function IndexPage() {
       text: "The person walks while swaying their hips along a curved path to the left slowly then stops to look down at the edge of the grey platform at something.",
     },
   ]
+
+  const citation = `@article{jiang2023motiongpt,
+    title={MotionGPT: Human Motion as a Foreign Language},
+    author={Jiang, Biao and Chen, Xin and Liu, Wen and Yu, Jingyi and Yu, Gang and Chen, Tao},
+    journal={arXiv preprint arXiv:2306.14795},
+    year={2023}
+}`
 
   return (
     <div className="scroll-smooth">
@@ -352,19 +360,9 @@ export default function IndexPage() {
           <p className="md:text-l text-justify lg:text-xl">
             If you find our code or paper helps, please consider citing:
           </p>
-          <CopyBlock
-            text={`@article{jiang2023motiongpt,
-          title={MotionGPT: Human Motion as a Foreign Language},
-          author={Jiang, Biao and Chen, Xin and Liu, Wen and Yu, Jingyi and Yu, Gang and Chen, Tao},
-          journal={arXiv preprint arXiv:2306.14795}, 
-          year={2023}
-  }`}
-            language="bibtex"
-            showLineNumbers={false}
-            theme={dracula}
-            wrapLines={true}
-            codeBlock
-          />
+          <SyntaxHighlighter language="latex" className="rounded">
+            {citation}
+          </SyntaxHighlighter>
         </section>
         <Separator className="my-8" />
         {/* Acknowledgement */}
