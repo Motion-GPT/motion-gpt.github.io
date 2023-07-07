@@ -8,7 +8,6 @@ import shanghaiTechLogo from "@/public/shanghaitech.svg"
 import teaser from "@/public/teaser.png"
 import tencentLogo from "@/public/tencent.png"
 import white from "@/public/white.svg"
-import CodeBlock from "react-copy-code"
 import SyntaxHighlighter from "react-syntax-highlighter"
 
 import "node_modules/video-react/dist/video-react.css"
