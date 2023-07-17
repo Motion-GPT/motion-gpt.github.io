@@ -74,15 +74,15 @@ export default function IndexPage() {
     "videos/motion-to-text/7.webm",
   ]
   const m2tQuestions = [
-    "Please explain the movement shown in [Motion_toknes] using natural language.",
-    "What kind of action is being represented in [Motion_toknes]? Explain it in text.",
-    "Generate text for [Motion_toknes]:",
-    "Provide a summary of the motion demonstrated in [Motion_toknes] using words.",
-    "What action is depicted in [Motion_toknes]? Please explain it in text.",
-    "Provide a summary of the action depicted in [Motion_toknes] using language.",
-    "Explain the motion demonstrated in [Motion_toknes] using natural language.",
-    "Describe the motion represented by [Motion_toknes] in plain English.",
-    "Provide a description of the action in [Motion_toknes] using words.",
+    "Please explain the movement shown in [Motion_tokens] using natural language.",
+    "What kind of action is being represented in [Motion_tokens]? Explain it in text.",
+    "Generate text for [Motion_tokens]:",
+    "Provide a summary of the motion demonstrated in [Motion_tokens] using words.",
+    "What action is depicted in [Motion_tokens]? Please explain it in text.",
+    "Provide a summary of the action depicted in [Motion_tokens] using language.",
+    "Explain the motion demonstrated in [Motion_tokens] using natural language.",
+    "Describe the motion represented by [Motion_tokens] in plain English.",
+    "Provide a description of the action in [Motion_tokens] using words.",
   ]
   const m2tAnswers = [
     "a person walks forward then does a backwards z-shape movement to its left side. then back to the right.",
