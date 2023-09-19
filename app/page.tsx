@@ -201,8 +201,14 @@ export default function IndexPage() {
               </Link>
             </Button>
             <Button variant="outline" disabled>
-              <Icons.boxes className="mr-2 h-4 w-4" />
-              Web Demo &#20; <Badge variant="outline">Soon</Badge>
+              <Link
+                href="https://huggingface.co/spaces/OpenMotionLab/MotionGPT"
+                target="_blank"
+                className="flex items-center"
+              >
+                <Icons.boxes className="mr-2 h-4 w-4" />
+                Web Demo
+              </Link>
             </Button>
           </div>
 
