@@ -200,7 +200,7 @@ export default function IndexPage() {
                 Code
               </Link>
             </Button>
-            <Button variant="outline" disabled>
+            <Button variant="outline">
               <Link
                 href="https://huggingface.co/spaces/OpenMotionLab/MotionGPT"
                 target="_blank"
