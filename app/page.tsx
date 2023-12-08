@@ -249,13 +249,24 @@ export default function IndexPage() {
               </span>
             </div>
           </div>
+          <div className="mt-4 justify-center gap-2 text-center text-xl font-medium tracking-wide md:text-3xl">
+            <Link
+              className="flex items-center justify-center text-nips transition hover:text-blue-400"
+              href="https://nips.cc/"
+              target="_blank"
+            >
+              <span>NeurIPS 2023</span>
+            </Link>
+          </div>
         </section>
+
         {/* Abstract */}
         <section className="mx-auto max-w-screen-lg space-y-5 py-10">
           <h2 className="py-5 font-mono text-2xl font-semibold uppercase tracking-tight">
             <div className="text-red-500">Paper</div>
             <div className="text-4xl">Abstract</div>
           </h2>
+          <gradio-app src="https://openmotionlab-motiongpt.hf.space"></gradio-app>
           <p className="md:text-l mt-4 text-justify lg:text-xl">
             Though the advancement of pre-trained large language models unfolds,
             the exploration of building a unified model for language and other
