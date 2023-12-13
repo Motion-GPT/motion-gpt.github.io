@@ -23,6 +23,7 @@
   backface-visibility: hidden;
   display: flex;
   touch-action: pan-y;
+  width: auto;
   flex-direction: row;
   height: auto;
   margin-left: calc(var(--slide-spacing) * -1);

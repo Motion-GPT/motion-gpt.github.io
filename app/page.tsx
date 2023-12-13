@@ -10,6 +10,8 @@ import tencentLogo from "@/public/tencent.png"
 import white from "@/public/white.svg"
 import SyntaxHighlighter from "react-syntax-highlighter"
 
+import CodeBox from "@/components/ui/code"
+
 import "node_modules/video-react/dist/video-react.css"
 import { siteConfig } from "@/config/site"
 import { Badge } from "@/components/ui/badge"
@@ -152,6 +154,17 @@ export default function IndexPage() {
     year={2023}
 }`
 
+  const citationSM = `@article{jiang2023motiongpt,
+    title={MotionGPT: Human Motion as a
+      Foreign Language},
+    author={Jiang, Biao and Chen, Xin
+      and Liu, Wen and Yu, Jingyi 
+      and Yu, Gang and Chen, Tao},
+    journal={arXiv preprint
+      arXiv:2306.14795},
+    year={2023}
+  }`
+
   return (
     <div className="scroll-smooth">
       {/* Video */}
@@ -207,12 +220,12 @@ export default function IndexPage() {
                 className="flex items-center"
               >
                 <Icons.boxes className="mr-2 h-4 w-4" />
-                Web Demo
+                <span className="max-md:hidden">Web</span> Demo
               </Link>
             </Button>
           </div>
 
-          <div className="tracking-tigh mt-4 grid grid-cols-6 gap-2 text-center text-base md:text-lg lg:mx-[18rem] lg:text-xl">
+          <div className="tracking-tigh mt-4 grid grid-cols-3 gap-2 text-center text-base md:grid-cols-6 md:text-lg lg:mx-[18rem] lg:text-xl">
             {authors.map((author, index) => (
               <div key={index}>
                 <Link
@@ -225,7 +238,7 @@ export default function IndexPage() {
               </div>
             ))}
           </div>
-          <div className="mt-4 grid grid-cols-3 justify-center gap-2 text-center text-base leading-tight tracking-tight md:text-xl lg:mx-[12rem]">
+          <div className="mt-4 grid justify-center gap-2 text-center text-base leading-tight tracking-tight md:grid-cols-3 md:text-xl lg:mx-[12rem]">
             <div className="flex items-center justify-center">
               <Image src={fudanLogo} alt="Fudan University" width={32}></Image>
               <span>
@@ -266,7 +279,7 @@ export default function IndexPage() {
             <div className="text-red-500">Paper</div>
             <div className="text-4xl">Abstract</div>
           </h2>
-          <gradio-app src="https://openmotionlab-motiongpt.hf.space"></gradio-app>
+          {/* <gradio-app src="https://openmotionlab-motiongpt.hf.space"></gradio-app> */}
           <p className="md:text-l mt-4 text-justify lg:text-xl">
             Though the advancement of pre-trained large language models unfolds,
             the exploration of building a unified model for language and other
@@ -290,9 +303,13 @@ export default function IndexPage() {
             tasks including text-driven motion generation, motion captioning,
             motion prediction, and motion in-between.
           </p>
-          {/* <Image src={teaser} alt="MotionGPT teaser"></Image> */}
-          <Tabs defaultValue="m2t">
-            <TabsList className="grid w-full grid-cols-4">
+          <Image
+            src={teaser}
+            alt="MotionGPT teaser"
+            className="lg:hidden"
+          ></Image>
+          <Tabs defaultValue="m2t" className="max-lg:hidden">
+            <TabsList className="grid w-full items-center justify-center md:grid-cols-4">
               <TabsTrigger value="m2t">Motion Translation</TabsTrigger>
               <TabsTrigger value="t2m">Motion Generation</TabsTrigger>
               <TabsTrigger value="t2t">Question-Answer</TabsTrigger>
@@ -361,10 +378,9 @@ export default function IndexPage() {
           </h2>
           <div className="flex justify-center">
             <iframe
-              width="640"
-              height="360"
               src="https://www.youtube.com/embed/AH_q9P5dQ-c"
               title="MotionGPT Comparision"
+              className="h-[calc(30vw)] w-2/3"
               allow="accelerometer; clipboard-write; encrypted-media; picture-in-picture"
               allowFullScreen
             ></iframe>
@@ -376,9 +392,12 @@ export default function IndexPage() {
           <p className="md:text-l text-justify lg:text-xl">
             If you find our code or paper helps, please consider citing:
           </p>
-          <SyntaxHighlighter language="latex" className="rounded">
-            {citation}
-          </SyntaxHighlighter>
+          <div className="max-md:hidden">
+            <CodeBox code={citation} />
+          </div>
+          <div className="md:hidden">
+            <CodeBox code={citationSM} />
+          </div>
         </section>
         <Separator className="my-8" />
         {/* Acknowledgement */}
