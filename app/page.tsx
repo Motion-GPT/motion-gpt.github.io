@@ -220,7 +220,7 @@ export default function IndexPage() {
                 className="flex items-center"
               >
                 <Icons.boxes className="mr-2 h-4 w-4" />
-                <span className="max-md:hidden">Web</span> Demo
+                Demo
               </Link>
             </Button>
           </div>
