@@ -169,7 +169,7 @@ export default function IndexPage() {
     <div className="scroll-smooth">
       {/* Video */}
       <section className="flex flex-col gap-2 bg-[#F6F6F6]">
-        <div className="h-[calc(100vh)] w-full items-end justify-center">
+        <div className="h-[calc(50vh)] w-full items-end justify-center sm:h-[calc(70vh)] md:h-[calc(100vh)]">
           <h1 className="py-4 text-center text-4xl font-extrabold leading-tight tracking-tight md:text-6xl">
             <span className="text-amber-500">Motion</span>GPT: Human Motion{" "}
             <br className="hidden sm:inline" />
@@ -279,8 +279,10 @@ export default function IndexPage() {
             <div className="text-red-500">Paper</div>
             <div className="text-4xl">Abstract</div>
           </h2>
-          {/* <gradio-app src="https://openmotionlab-motiongpt.hf.space"></gradio-app> */}
-          <p className="md:text-l mt-4 text-justify lg:text-xl">
+          {/* <div className="max-md:hidden">
+            <gradio-app src="https://openmotionlab-motiongpt.hf.space"></gradio-app>
+          </div> */}
+          <p className="mt-4 text-justify text-sm md:text-lg lg:text-xl">
             Though the advancement of pre-trained large language models unfolds,
             the exploration of building a unified model for language and other
             multimodal data, such as motion, remains challenging and untouched
@@ -352,7 +354,7 @@ export default function IndexPage() {
             <div className="text-red-500">Our</div>
             <div className="text-4xl">Method</div>
           </h2>
-          <p className="md:text-l mt-4 text-justify lg:text-xl">
+          <p className="mt-4 text-justify text-sm md:text-lg lg:text-xl">
             To involve large language data and models in the motion generation
             tasks, we propose a unified motion-language framework named
             MotionGPT. MotionGPT consists of a motion tokenizer responsible for
