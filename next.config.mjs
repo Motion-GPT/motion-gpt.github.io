@@ -6,7 +6,7 @@ const nextConfig = {
     appDir: true,
   },
   images: { unoptimized: true },
-  // assetPrefix: "https://motion-gpt.github.io/",
+  assetPrefix: "https://motion-gpt.github.io/",
 }
 
 export default nextConfig
