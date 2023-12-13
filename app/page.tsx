@@ -274,8 +274,8 @@ export default function IndexPage() {
         </section>
 
         {/* Abstract */}
-        <section className="mx-auto max-w-screen-lg space-y-5 py-10">
-          <h2 className="py-5 font-mono text-2xl font-semibold uppercase tracking-tight">
+        <section className="mx-auto max-w-screen-lg space-y-5 py-5 md:py-10">
+          <h2 className="font-mono text-2xl font-semibold uppercase tracking-tight md:py-5">
             <div className="text-red-500">Paper</div>
             <div className="text-4xl">Abstract</div>
           </h2>
@@ -305,11 +305,12 @@ export default function IndexPage() {
             tasks including text-driven motion generation, motion captioning,
             motion prediction, and motion in-between.
           </p>
-          <Image
-            src={teaser}
-            alt="MotionGPT teaser"
-            className="lg:hidden"
-          ></Image>
+          <div className="lg:hidden">
+            <Image src={teaser} alt="MotionGPT teaser"></Image>
+            <span className="text-sm text-gray-500">
+              Use PC to view this page for more details.
+            </span>
+          </div>
           <Tabs defaultValue="m2t" className="max-lg:hidden">
             <TabsList className="grid w-full items-center justify-center md:grid-cols-4">
               <TabsTrigger value="m2t">Motion Translation</TabsTrigger>
@@ -349,8 +350,8 @@ export default function IndexPage() {
             </TabsContent>
           </Tabs>
         </section>
-        <section className="mx-auto max-w-screen-lg space-y-5 py-10">
-          <h2 className="py-5 font-mono text-2xl font-semibold uppercase tracking-tight">
+        <section className="mx-auto max-w-screen-lg space-y-5 py-5 md:py-10">
+          <h2 className="font-mono text-2xl font-semibold uppercase tracking-tight md:py-5">
             <div className="text-red-500">Our</div>
             <div className="text-4xl">Method</div>
           </h2>
@@ -366,7 +367,7 @@ export default function IndexPage() {
           <Image src={pipeline} alt="MotionGPT pipeline"></Image>
         </section>
         {/* More Results */}
-        <section className="mx-auto w-full max-w-screen-lg space-y-5 py-10">
+        <section className="mx-auto w-full max-w-screen-lg space-y-5 py-5 md:py-10">
           {/* <h2 className="py-5 font-mono text-2xl font-semibold uppercase tracking-tight">
             <div className="text-red-500">Example</div>
             <div className="text-4xl">Results</div>
@@ -374,7 +375,7 @@ export default function IndexPage() {
           {/* Different Tasks */}
 
           {/* Comparision */}
-          <h2 className="py-5 font-mono text-2xl font-semibold uppercase tracking-tight">
+          <h2 className="font-mono text-2xl font-semibold uppercase tracking-tight md:py-5">
             <div className="text-red-500">Comparision</div>
             <div className="text-4xl">Results</div>
           </h2>
