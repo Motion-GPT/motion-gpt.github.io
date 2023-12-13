@@ -1,4 +1,5 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+public/videos/mp4
 
 # dependencies
 node_modules
@@ -165,3 +166,4 @@ dist
 .yarn/install-state.gz
 .pnp.*
 archived
+
