@@ -147,22 +147,24 @@ export default function IndexPage() {
     },
   ]
 
-  const citation = `@article{jiang2023motiongpt,
+  const citation = `@article{jiang2024motiongpt,
     title={MotionGPT: Human Motion as a Foreign Language},
     author={Jiang, Biao and Chen, Xin and Liu, Wen and Yu, Jingyi and Yu, Gang and Chen, Tao},
-    journal={arXiv preprint arXiv:2306.14795},
-    year={2023}
+    journal={Advances in Neural Information Processing Systems},
+    volume={36},
+    year={2024}
 }`
 
-  const citationSM = `@article{jiang2023motiongpt,
+  const citationSM = `@article{jiang2024motiongpt,
     title={MotionGPT: Human Motion as a
       Foreign Language},
     author={Jiang, Biao and Chen, Xin
       and Liu, Wen and Yu, Jingyi 
       and Yu, Gang and Chen, Tao},
-    journal={arXiv preprint
-      arXiv:2306.14795},
-    year={2023}
+    journal={Advances in Neural
+      Information Processing Systems},
+    volume={36},
+    year={2024}
   }`
 
   return (
